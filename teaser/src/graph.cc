@@ -58,8 +58,8 @@ std::vector<int> teaser::MaxCliqueSolver::findMaxClique(teaser::Graph graph) {
   G.compute_cores();
   auto max_core = G.get_max_core();
 
-  TEASER_DEBUG_INFO_MSG("Max core number: " << max_core);
-  TEASER_DEBUG_INFO_MSG("Num vertices: " << vertices.size());
+  // TEASER_DEBUG_INFO_MSG("Max core number: " << max_core);
+  // TEASER_DEBUG_INFO_MSG("Num vertices: " << vertices.size());
 
   // check for k-core heuristic threshold
   // check whether threshold equals 1 to short circuit the comparison
